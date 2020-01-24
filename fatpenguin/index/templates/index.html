@@ -2,47 +2,45 @@
 {% block content %}
 {% load static %}
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="topnav" id='myTopnav'>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     MENU
   </a>
-  <a href='#'><strong>@THATFATPENGUIN</strong></a>
-      <a href="#home">HOME</a>
+      <a href="#home" class='active'>HOME</a>
       <a href="#news">UPCOMING SHOWS</a>
       <a href="#contact">CONTACT</a>
       <a href="#about">ABOUT</a>
+      <div class='left-nav'>
+        <a href='#' class='social'><strong>@THATFATPENGUIN</strong></a>
+        </div>
     </div>
     </div>
+
 
     <div class='container-fluid logo-container'>
       <img class='logo' src='{% static "images/penguin.png" %}'>
       </div>
 
+<div class='container-fluid blurb-container'>
+      <img class='blurb' src='{% static "images/blurb.png" %}'>
+      </div>
+
 <ul class="cb-slideshow">
 	<li>
 		<span>Image 01</span>
-		<!--text could go here<div>
-			<h3>Live Comedy</h3>
-		</div>-->
 	</li>
   <li>
 		<span>Image 02</span>
-    <!--text could go here<div>
+    <!--<div>
 			<h3>Live Comedy</h3>
 		</div>-->
 	</li>
   <li>
     <span>Image 03</span>
-    <!--text could go here<div>
-			<h3>Live Comedy</h3>
-		</div>-->
   </li>
   <li>
     <span>Image 04</span>
-    <!--text could go here<div>
-			<h3>Live Comedy</h3>
-		</div>-->
   </li>
 </ul>
 
