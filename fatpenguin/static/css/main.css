@@ -12,7 +12,7 @@ body{
   margin-top: 25px;
   margin-bottom: 10px;
   width: 100%;
-  z-index: 3;
+  z-index: 4;
 }
 
 .logo-container{
@@ -33,30 +33,38 @@ body{
 
 .blurb{
   z-index: 3;
-  position: relative;
-  max-width:100%;
-  max-height: 100%;
+  color: white;
+  text-shadow: 2px 2px black;
+  font-family: 'Sigmar One'
 }
 
 
 .blurb-container{
-  z-index: 5;
+  z-index: 3;
   position: fixed;
   overflow:visible;
-  bottom: 50%;
+  bottom: 40%;
   left: 0%;
   max-width: 100%;
   max-height: 100%;
   margin: 0px;
   text-align: center;
+  font-size: 2em;
 }
 
-
+.address{
+  color: white;
+  text-shadow: 2px 2px black;
+  font-size: 0.5em !important;
+  font-family: 'Josefin Sans', sans-serif;
+}
 
 /* The navbar */
 .topnav {
   overflow: hidden;
+  z-index: 4;
   text-align: right;
+  padding: 10px !important;
 }
 
 .left-nav{
@@ -68,16 +76,16 @@ body{
   color: white;
   text-shadow: 2px 2px black;
   padding: 14px 16px;
-  padding-top: 5px;
+  padding-top: 10px;
   padding-bottom: 5px;
   margin-right: 20px;
   text-decoration: none;
   font-size: 1.5em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .topnav a:hover {
-  border: solid white 2px !important;
+  border: solid white 3px;
   font-weight: bold;
   font-size: 2em;
 }
@@ -206,13 +214,15 @@ i{
   .topnav a {display: none;}
   .topnav a.icon {
     display: block;
+    border: none !important;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .topnav.responsive {position: relative; background-color: black; opacity: 0.6;}
+  .topnav.responsive {position: relative; background-color: black; opacity: 0.8;}
   .topnav.responsive a.icon {
-    display: block
+    display: block;
+    border: none !important;
     right: 0;
     top: 0;
   }
@@ -226,5 +236,24 @@ i{
     text-align: left;
     margin-right: 0px;
   }
+
+  .blurb-container{
+    position: fixed;
+    overflow:visible;
+    bottom: 5%;
+    left: 0%;
+  }
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .blurb-container{
+    position: fixed;
+    overflow:visible;
+    bottom: 10%;
+    left: 0%;
+  }
+
 
 }
